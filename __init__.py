@@ -256,7 +256,7 @@ def start_recording(
         f,
         format="wav",
         start_second=firststarttime / 1000,
-        duration=((totalduration - ((loopsize + 1) * 1200)) / 1000),
+        duration=((totalduration - (loopsize * 1000)) / 1000),
     )
     try:
         f.close()
